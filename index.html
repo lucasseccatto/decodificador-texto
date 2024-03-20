@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/alura-logo.png" alt="Logo da Alura" />
+    </header>
+    <main>
+      <div class="content-left">
+        <textarea
+          class="text"
+          required=""
+          placeholder="Digite seu texto"
+          spellcheck="false"
+        ></textarea>
+        <div class="content-left-final">
+          <div class="content-left-rules">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="content-left-buttons">
+            <button class="encrypt">Criptografar</button>
+            <button class="decrypt">Descriptografar</button>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <p class="encrypted-text"></p>
+        <div class="content-right-items">
+          <img src="./img/search.png" alt="imagem de Pesquisa" />
+          <div class="content-right-message">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+        </div>
+        <button class="content-right-copy">Copiar</button>
+      </div>
+    </main>
+    <script src="./js/scripts.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
